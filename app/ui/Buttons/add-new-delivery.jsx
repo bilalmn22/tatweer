@@ -1,8 +1,10 @@
 import { Button } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 function AddNewShippingButton() {
   return (
+   <Link href={"/shipping"}>
     <Button
       className="w-52 hidden lg:flex  h-16 rounded-xl bg-[#2080e2] text-white text-base font-bold  text-center capitalize "
       variant="outlined"
@@ -26,6 +28,7 @@ function AddNewShippingButton() {
     >
       New Shipping
     </Button>
+   </Link>
   );
 }
 
