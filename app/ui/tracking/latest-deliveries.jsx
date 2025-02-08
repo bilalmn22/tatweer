@@ -10,11 +10,11 @@ function LatestDeliveries() {
       className="overflow-y-scroll grow pr-4 mt-3"
     >
       {[...Array(8)].map((_, index) => (
-        <Suspense index={index}>
+        <Suspense key={index}>
           <DeliveryBox
+          index={index}
             selected={selected}
             setSelected={setSelected}
-            key={index}
           />
         </Suspense>
       ))}

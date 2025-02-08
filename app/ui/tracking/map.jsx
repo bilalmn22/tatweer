@@ -107,6 +107,13 @@ export default function TrackingMap() {
       </>
     </GoogleMap>
   ) : (
-    <></>
+    <>
+      <div className="grid h-full place-content-center">
+        <p>
+          Google map can load only in dev mode (our google map api key is not
+          shared)
+        </p>
+      </div>
+    </>
   );
 }
